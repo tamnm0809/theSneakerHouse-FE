@@ -1,0 +1,277 @@
+.sell {
+  width: 100%;
+  display: flex;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.sell .sell-product {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.sell .sell-product .card {
+  border: none;
+  width: 20rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.sell .sell-product .card .card-title {
+  color: #004aad;
+  margin: 1.5rem;
+}
+
+.sell .sell-product .card .card-img-top {
+  border: 1px solid rgb(189, 186, 186);
+}
+
+.sell .sell-product .card .card-amount {
+  font-size: 1rem;
+  color: #004aad;
+  font-weight: 500;
+  text-align: start;
+}
+
+.sell .sell-product .card .card-amount .amount {
+  color: #ff914d;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+
+.sell .sell-chart {
+  width: 65%;
+}
+
+.overview-order-container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.overview-order-container .overview-progress {
+  width: 60%;
+}
+
+.overview-order-container .overview-progress .overview-title {
+  color: #004aad;
+  font-size: 1.4rem;
+  margin: 0 0 2rem 0rem;
+  text-transform: uppercase;
+}
+
+.overview-order-container
+  .overview-progress
+  .overview-progress-item
+  .overview-progress-text {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.overview-order-container .overview-progress .overview-progress-item .complete {
+  color: #41b8d5;
+}
+
+.overview-order-container
+  .overview-progress
+  .overview-progress-item
+  .cancelled {
+  color: #ff914d;
+}
+
+.overview-order-container .overview-progress .overview-progress-item .delivery {
+  color: #00BF63;
+}
+
+.overview-order-container .overview-progress .overview-progress-item .refun {
+  color: #FF66C4;
+}
+
+.overview-order-container
+  .overview-progress
+  .overview-progress-item
+  .overview-progress-bar
+  .progress-bar {
+  height: 0.5rem;
+}
+
+.overview-order-container
+  .overview-progress
+  .overview-progress-item
+  .overview-progress-bar
+  .complete {
+  background-color: #6ce5e8;
+}
+
+.overview-order-container
+  .overview-progress
+  .overview-progress-item
+  .overview-progress-bar
+  .cancelled {
+  background-color: #ff914d;
+}
+
+.overview-order-container
+  .overview-progress
+  .overview-progress-item
+  .overview-progress-bar
+  .delivery {
+  background-color: #C1FF72;
+}
+
+.overview-order-container
+  .overview-progress
+  .overview-progress-item
+  .overview-progress-bar
+  .refun {
+  background-color: #FF66C4;
+}
+
+.overview-order-container .overview-chart{
+  width: 40%;
+}
+
+.overview-order-container .overview-chart .chart{
+  width: 50%;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+/* 
+  *
+  *For mobile phones 
+  *
+  */
+@media only screen and (max-width: 760px) {
+  .overview{
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  .sell {
+    width: 100%;
+    display: block;
+  }
+
+  .sell .sell-product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .sell .sell-product .card {
+    width: 10rem;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem auto 0rem;
+    background-color: rgb(0, 0, 0, 0);
+  }
+
+  .sell .sell-product .card .card-title {
+    color: #004aad;
+    margin: 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .sell .sell-product .card .card-img-top {
+    border: 1px solid rgb(189, 186, 186);
+  }
+
+  .sell .sell-product .card .card-amount {
+    color: #004aad;
+    font-weight: 500;
+    text-align: start;
+    font-size: 0.5rem;
+  }
+
+  .sell .sell-product .card .card-amount .amount {
+    color: #ff914d;
+    font-weight: 500;
+    margin-left: 0.5rem;
+  }
+
+  .sell .sell-chart {
+    width: 100%;
+  }
+
+  .overview-order-container .overview-progress{
+    display: none;
+  }
+
+  .overview-order-container .overview-chart{
+    width: 100%;
+  }
+
+  .overview-order-container .overview-chart .chart{
+    width: 100%;
+  }
+}
+/* 
+  *
+  *For tablets
+  *
+  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sell {
+    width: 100%;
+    display: flex;
+  }
+
+  .sell .sell-product {
+    width: 35%;
+    display: flex;
+    align-items: center;
+  }
+
+  .sell .sell-product .card {
+    width: 12rem;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem auto 0rem;
+    background-color: rgb(0, 0, 0, 0);
+  }
+
+  .sell .sell-product .card .card-title {
+    margin: 0.9rem;
+    color: #004aad;
+    font-size: 0.8rem;
+  }
+
+  .sell .sell-product .card .card-img-top {
+    border: 1px solid rgb(189, 186, 186);
+  }
+
+  .sell .sell-product .card .card-text {
+    font-size: 0.8rem;
+  }
+
+  .sell .sell-product .card .card-amount {
+    font-size: 0.8rem;
+    color: #004aad;
+    font-weight: 500;
+    text-align: start;
+  }
+
+  .sell .sell-product .card .card-amount .amount {
+    color: #ff914d;
+    font-weight: 500;
+    margin-left: 0.7rem;
+  }
+
+  .sell .sell-chart {
+    width: 65%;
+  }
+  
+  .overview-order-container .overview-chart{
+    width: 40%;
+  }
+
+  .overview-order-container .overview-chart .chart{
+    width: 100%;
+  }
+}
