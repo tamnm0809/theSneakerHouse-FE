@@ -1,0 +1,126 @@
+.products {
+  width: 100%;
+  background-color: white;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.products .products-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products .products-title h5 {
+  color: #004aad;
+  font-size: 1.2rem;
+}
+
+.products .products-title .btn-new-product {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #004aad;
+}
+
+.products .products-title .btn-new-product i {
+  padding: 0.1rem;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+}
+
+.products .products-table {
+  overflow-x: auto;
+}
+
+.products .products-table thead > tr > td {
+  font-weight: 500;
+  color: #004aad;
+}
+
+.products .products-table tbody > tr:hover {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.products .products-table tbody > .active {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.products .products-table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.products .products-table tr td .btn-edit {
+  color: #00bf63;
+  font-weight: 500;
+}
+
+.products .products-table tr td .btn-delete {
+  color: #ff3131;
+  font-weight: 500;
+}
+/* 
+  *
+  *For mobile phones 
+  *
+  */
+@media only screen and (max-width: 760px) {
+  .products {
+    width: 100%;
+  }
+
+  .products .products-title {
+    overflow: hidden;
+  }
+
+  .products .products-title h5 {
+    font-size: 1rem;
+  }
+
+  .products .products-title .btn-new-product {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    background-color: #004aad;
+  }
+
+  .products .products-title .btn-new-product i {
+    padding: auto;
+  }
+
+  .products .products-table .table {
+    margin-bottom: 0;
+  }
+
+  .products .products-table tr td {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    vertical-align: text-top;
+  }
+}
+/* 
+  *
+  *For tablets
+  *
+  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .products .products-table tr td .btn-edit {
+    font-size: 1rem;
+  }
+
+  .products .products-table tr td .btn-delete {
+    font-size: 1rem;
+  }
+
+  .pagination {
+    padding-bottom: 0.5rem;
+  }
+
+  .page-link {
+    font-size: 0.9rem;
+  }
+}

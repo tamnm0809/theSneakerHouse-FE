@@ -1,8 +1,7 @@
 .navbar-vertical {
   width: 15rem; 
-  z-index: 1000;
+  z-index: 999;
   padding: 0.5rem;
-  margin-right: 0.5rem;
   background-color: #004aad;
   transition: transform 0.3s ease, width 0.3s ease;
 }
@@ -12,6 +11,7 @@
 }
 
 .navbar-vertical .nav .nav-title {
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -20,15 +20,15 @@
 }
 
 .navbar-vertical .nav .nav-item .nav-link {
-  padding: 0.5rem;
   color: white;
+  padding: 0.5rem;
   font-size: 1rem;
 }
 
 .navbar-vertical .nav .nav-item .active {
   color: #00fff7;
-  border-right: 4px solid #00fff7;
   background-color: #004aad;
+  border-right: 4px solid #00fff7;
 }
 
 .navbar-vertical .nav .nav-item hr {
@@ -40,8 +40,10 @@
 /* For mobile phones */
 @media only screen and (max-width: 768px) {
   .navbar-vertical {
+    top: 0;
     width: 100%;
-    height: 100%;
+    position: fixed;
+    min-height: 100%;
     transform: translateX(-100%);
   }
 
@@ -74,6 +76,7 @@
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .navbar-vertical {
     width: 15rem;
+    position: relative;
     transform: translateX(-100%);
   }
 

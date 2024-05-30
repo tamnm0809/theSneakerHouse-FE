@@ -1,0 +1,157 @@
+.accounts {
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.accounts .accounts-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accounts .accounts-header .accounts-title {
+    font-size: 1rem;
+    color: #24357D;
+    padding: 0 0.5rem;
+}
+
+.accounts .accounts-header .form {
+    width: 40%;
+}
+
+.accounts .accounts-header .form span,
+i {
+    color: #24357D;
+    border-right: none;
+    background-color: white;
+}
+
+.accounts .accounts-header .form .form-control {
+    font-size: 1rem;
+}
+
+.accounts .accounts-search {
+    width: 100%;
+    display: flex;
+}
+
+.accounts .accounts-search .form {
+    width: 50%;
+    margin-right: 2rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.accounts .accounts-content{
+    margin-bottom: 2.5rem;
+}
+
+.accounts .accounts-content .card {
+    width: 15rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px #dfdfdf;
+}
+
+.accounts .accounts-content .card .card-title,
+.card-text {
+    color: black;
+    font-size: 1rem;
+}
+
+.accounts .accounts-content .card:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 5px #3459ffb4;
+}
+
+.accounts .accounts-content .active {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 5px #3459ffb4;
+}
+/* 
+  *
+  *For mobile phones 
+  *
+  */
+@media only screen and (max-width: 760px) {
+    .accounts {
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 0.5rem;
+        position: absolute;
+    }
+
+    .accounts .accounts-header {
+        padding-top: 0.5rem;
+    }
+
+    .accounts .accounts-header .form {
+        width: 60%;
+        margin-right: 0.5rem;
+    }
+
+    .accounts .accounts-search .form {
+        width: 50%;
+        margin-top: 0.5rem;
+        padding: 0rem 0rem;
+        margin-right: 0.5rem;
+    }
+
+    .accounts .accounts-search .form .btn-outline-primary {
+        width: 100%;
+    }
+
+    .accounts .accounts-content .card {
+        width: 11rem;
+        padding: 1rem;
+        text-align: center;
+        margin: 0.5rem auto;
+        border-radius: 2rem;
+        text-decoration: none;
+        box-shadow: 2px 2px 5px #dfdfdf;
+    }
+}
+
+/* 
+  *
+  *For tablets
+  *
+  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .accounts {
+        width: 100%;
+    }
+
+    .accounts .accounts-header .form {
+        width: 40%;
+        margin-right: 0.5rem;
+    }
+
+    .accounts .accounts-search .form {
+        width: 50%;
+        margin-top: 0.5rem;
+        padding: 0rem 0rem;
+        margin-right: 0.5rem;
+    }
+
+    .accounts .accounts-search .form .btn-outline-primary {
+        width: 100%;
+    }
+
+    .accounts .accounts-content .card {
+        width: 11rem;
+        padding: 1rem;
+        text-align: center;
+        margin: 0.5rem auto;
+        border-radius: 2rem;
+        text-decoration: none;
+        box-shadow: 2px 2px 5px #dfdfdf;
+    }
+}

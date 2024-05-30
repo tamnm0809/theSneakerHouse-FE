@@ -1,0 +1,301 @@
+.wrapper {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.wrapper .wrapper-header {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  background-color: white;
+  margin: 0rem auto 0.5rem auto;
+  justify-content: space-between;
+}
+
+.wrapper .wrapper-header h5 {
+  margin: 0;
+  padding: 0;
+  color: #24357d;
+}
+
+.wrapper .wrapper-header .form {
+  width: 30%;
+}
+
+.wrapper .wrapper-header .form .input-group-text {
+  background-color: white;
+}
+
+.wrapper .sizes {
+  display: flex;
+  margin: 0rem auto 0.5rem auto;
+}
+
+.wrapper .sizes .sizes-title {
+  color: #24357d;
+  padding: 1rem 1rem;
+}
+
+.wrapper .sizes .sizes-table {
+  width: 70%;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+
+.wrapper .sizes .sizes-table .d-flex {
+  justify-content: space-between;
+}
+
+.wrapper .sizes .sizes-table .d-flex .btn-primary{
+    padding: 0.5rem;
+    display: none;
+}
+
+.wrapper .sizes .sizes-table .table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.wrapper .sizes .sizes-table .table thead tr td {
+  font-weight: 500;
+  color: #24357d;
+}
+
+.wrapper .sizes .sizes-table .table tbody > tr:hover {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.wrapper .sizes .sizes-table .table tbody > .active {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.wrapper .sizes .sizes-table .table tr td .btn-delete {
+  color: #ff3131;
+  font-weight: 500;
+}
+
+.wrapper .sizes .sizes-form {
+  width: 30%;
+  margin: 0 0 0 0.5rem;
+}
+
+.wrapper .sizes .sizes-form .form {
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.wrapper .sizes .sizes-form .form h5 {
+  color: #004aad;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wrapper .sizes .sizes-form .button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper .sizes .sizes-form .button .btn-submit {
+  color: white;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  background-color: #004aad;
+}
+
+.wrapper .sizes .sizes-form .button .btn-cancel {
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  background-color: white;
+  border: 1px solid rgb(202, 202, 202);
+}
+
+/*****/
+.wrapper {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.wrapper .wrapper-header {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  background-color: white;
+  margin: 0rem auto 0.5rem auto;
+  justify-content: space-between;
+}
+
+.wrapper .wrapper-header h5 {
+  margin: 0;
+  padding: 0;
+  color: #24357d;
+}
+
+.wrapper .wrapper-header .form {
+  width: 30%;
+}
+
+.wrapper .wrapper-header .form .input-group-text {
+  background-color: white;
+}
+
+.wrapper .images {
+  display: flex;
+}
+
+.wrapper .images .images-title {
+  color: #24357d;
+  padding: 1rem 1rem;
+}
+
+.wrapper .images .images-table {
+  width: 70%;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+
+.wrapper .images .images-table .d-flex {
+  justify-content: space-between;
+}
+
+.wrapper .images .images-table .d-flex .btn-primary{
+    padding: 0.5rem;
+    display: none;
+}
+
+.wrapper .images .images-table .table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.wrapper .images .images-table .table thead tr td {
+  font-weight: 500;
+  color: #24357d;
+}
+
+.wrapper .images .images-table .table tbody > tr:hover {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.wrapper .images .images-table .table tbody > .active {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.wrapper .images .images-table .table tr td .btn-delete {
+  color: #ff3131;
+  font-weight: 500;
+}
+
+.wrapper .images .images-form {
+  width: 30%;
+  margin: 0 0 0 0.5rem;
+}
+
+.wrapper .images .images-form .form {
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.wrapper .images .images-form .form h5 {
+  color: #004aad;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wrapper .images .images-form .button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper .images .images-form .button .btn-submit {
+  color: white;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  background-color: #004aad;
+}
+
+.wrapper .images .images-form .button .btn-cancel {
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  background-color: white;
+  border: 1px solid rgb(202, 202, 202);
+}
+/* 
+  *
+  *For mobile phones 
+  *
+  */
+@media only screen and (max-width: 760px) {
+  .wrapper .wrapper-header h5 {
+    margin: 0;
+    padding: 0;
+    color: #24357d;
+    font-size: 0.8rem;
+  }
+
+  .wrapper .wrapper-header .form {
+    width: 40%;
+  }
+
+  .wrapper .sizes,
+  .wrapper .images{
+    display: block;
+  }
+
+  .wrapper .sizes .sizes-title,
+  .wrapper .images .images-title {
+    margin: 0;
+    color: #24357d;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .wrapper .sizes .sizes-table .d-flex,
+  .wrapper .images .images-table .d-flex{
+    align-items: center;
+  }
+
+  .wrapper .sizes .sizes-table .d-flex .btn-primary,
+  .wrapper .images .images-table .d-flex .btn-primary {
+    display: block;
+    margin: 0.5rem;
+  }
+
+  .wrapper .sizes .sizes-table,
+  .wrapper .images .images-table{
+    width: 100%;
+  }
+
+  .wrapper .sizes .sizes-table .table tr td,
+  .wrapper .images .images-table .table tr td {
+    font-size: 0.8rem;
+  }
+
+  .wrapper .sizes .sizes-form,
+  .wrapper .images .images-form{
+    margin: 0.5rem auto;
+    width: 100%;
+  }
+}
+
+/* 
+  *
+  *For tablets
+  *
+  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper .sizes .sizes-table,
+    .wrapper .images .images-table {
+      width: 60%;
+    }
+
+    .wrapper .sizes .sizes-form,
+    .wrapper .images .images-form{
+        width: 40%;
+    }
+}

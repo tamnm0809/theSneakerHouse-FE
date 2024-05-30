@@ -1,8 +1,8 @@
 .sell {
   width: 100%;
   display: flex;
-  margin: 0.5rem auto;
   padding: 0.5rem;
+  margin: 0.5rem 0rem;
   background-color: white;
   justify-content: space-between;
 }

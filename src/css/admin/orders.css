@@ -1,0 +1,249 @@
+.orders {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.orders .orders-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.orders .orders-header h5 {
+  color: #24357d;
+}
+
+.orders .orders-header .orders-header-form {
+  width: 40%;
+}
+
+.orders
+  .orders-header
+  .orders-header-form
+  .form
+  .input-group
+  .input-group-text {
+  background-color: white;
+}
+
+.orders .orders-table {
+  width: 100%;
+  padding: 0.5rem;
+  overflow-x: auto;
+  background-color: white;
+}
+
+.orders .orders-table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.orders .orders-table thead tr td {
+  color: #004aad;
+  font-weight: 500;
+}
+
+.orders .orders-table tbody > tr:hover {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.orders .orders-table tbody > .active {
+  border: 1px solid #7ecbff;
+  background-color: #7ecbff70;
+}
+
+.orders .orders-table .delivery {
+  color: #00bf63;
+  font-weight: 500;
+}
+
+.orders .orders-table .complete {
+  color: #ff914d;
+  font-weight: 500;
+}
+
+.orders .orders-table .refun {
+  color: #ffde59;
+  font-weight: 500;
+}
+
+.orders .orders-table .uncomfirm {
+  color: #ff3131;
+  font-weight: 500;
+}
+
+.orders .orders-table tr td .btn-view .fa-eye {
+  color: #004aad;
+  font-size: 1rem;
+}
+
+.orders .container-fluid .modal-title-orders h5 {
+  color: #004aad;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.orders .container-fluid .modal-title-orders h5 .idOrder {
+  color: black;
+  font-weight: normal;
+}
+
+.modal-content {
+  max-width: 50%;
+}
+
+.modal-content .container-fluid .orders-info {
+  display: flex;
+}
+
+.modal-content .container-fluid .orders-info .info {
+  flex-grow: 1;
+  display: flex;
+  padding-right: 0.5rem;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.modal-content .container-fluid .orders-info .info h6 {
+  color: #004aad;
+  text-transform: uppercase;
+}
+
+.modal-content .container-fluid .product-info h6 {
+  color: #004aad;
+  margin: 1rem auto;
+  text-transform: uppercase;
+}
+
+.modal-content .container-fluid .product-info .orders-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content
+  .container-fluid
+  .product-info
+  .orders-product
+  .orders-product-item {
+  display: flex;
+}
+
+.modal-content
+  .container-fluid
+  .product-info
+  .orders-product
+  .orders-product-item
+  .orders-product-item-info {
+  display: flex;
+  padding: 0 0.5rem;
+  flex-direction: column;
+}
+
+.modal-content
+  .container-fluid
+  .product-info
+  .orders-product
+  .orders-product-item
+  .orders-product-item-info
+  span {
+  padding: 0.2rem 0;
+}
+
+.modal-content
+  .container-fluid
+  .product-info
+  .orders-product
+  .orders-product-price {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content
+  .container-fluid
+  .product-info
+  .orders-product
+  .orders-product-price
+  .price {
+  margin: 0 2rem;
+  font-weight: 500;
+}
+
+.modal-content
+  .container-fluid
+  .product-info
+  .orders-product
+  .orders-product-price
+  .price {
+  color: #ff914d;
+}
+
+.modal-content .container-fluid .orders-amount {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+
+.modal-content .container-fluid .orders-amount .title {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content .container-fluid .orders-amount .title .me-3 {
+  font-style: italic;
+  text-align: right;
+}
+
+.modal-content .container-fluid .orders-amount .title .price {
+  color: #004aad;
+  font-weight: 500;
+  text-align: right;
+}
+/* 
+  *
+  *For mobile phones 
+  *
+  */
+@media only screen and (max-width: 760px) {
+  .modal-content {
+    max-width: 100%;
+  }
+
+  .modal-content .container-fluid .product-info .orders-product {
+    display: block;
+  }
+
+  .modal-content
+    .container-fluid
+    .product-info
+    .orders-product
+    .orders-product-price {
+    display: block;
+  }
+
+  .modal-content .container-fluid .orders-amount {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+/* 
+  *
+  *For tablets
+  *
+  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .modal-content {
+    max-width: 100%;
+  }
+
+  .modal-content .container-fluid .orders-amount {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+}
